@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <form action="guardar.php" method="post" class="contenedor_formulario">
+        <h2>Registrar Usuario</h2>
+
+        <label>Usuario:</label><br>
+        <input type="text" name="usuario_usu" required><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" name="password_usu" required><br><br>
+
+              <label>Rol:</label><br>
+        <select name="rol" required>
+            <option value="">-- Selecciona tu rol --</option>
+            <option value="Usuario">Usuario</option>
+            <option value="Docente">Docente</option>
+            <option value="Admin">Admin</option>
+        </select><br><br>
+
+        <button type="submit">guardar</button>
+        <button onclick="window.location.href='index.php'">regresar a inicio</button>
+
+    </form>
+
+</body>
+
+</html>
